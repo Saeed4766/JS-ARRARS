@@ -33,6 +33,8 @@ console.log(shopping);
 // const sequence = [1, 1, 2, 3, 5, 8, 13];
 // const random = ['tree', 795, [0, 1, 2]];
 
+
+
 console.log(random)
 
 const newName = random.length //checking the length of the array

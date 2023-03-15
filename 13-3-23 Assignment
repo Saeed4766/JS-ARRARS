@@ -1,0 +1,24 @@
+
+//https://leetcode.com/problems/concatenation-of-array/
+
+
+var getConcatenation = function(nums) {
+    
+    
+    const ans = nums.concat(nums)
+    return ans
+
+};
+
+
+//https://leetcode.com/problems/build-array-from-permutation/submissions/
+var buildArray = function(nums) {
+  
+    
+    let ans = []
+    let result = nums.forEach(function(number,index){
+        ans.push(nums[nums[index]])
+   })
+   
+    return ans
+};
