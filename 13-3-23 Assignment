@@ -1,6 +1,5 @@
 
-//https://leetcode.com/problems/concatenation-of-array/
-
+//1. https://leetcode.com/problems/concatenation-of-array/
 
 var getConcatenation = function(nums) {
     
@@ -11,9 +10,9 @@ var getConcatenation = function(nums) {
 };
 
 
-//https://leetcode.com/problems/build-array-from-permutation/submissions/
+//2. https://leetcode.com/problems/build-array-from-permutation/submissions/
+
 var buildArray = function(nums) {
-  
     
     let ans = []
     let result = nums.forEach(function(number,index){
@@ -21,4 +20,27 @@ var buildArray = function(nums) {
    })
    
     return ans
+};
+
+//3. https://leetcode.com/problems/truncate-sentence/
+
+var truncateSentence = function(s, k) {
+   
+    let res1= s.split(" ")
+    let res2 = res1.splice(0,k)
+    let res3 = res2.join(" ")
+    return res3
+
+};
+
+//4. https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/
+
+var arrayStringsAreEqual = function(word1, word2) {
+    if(word1[0],word1[word1.length-1] === word2[0],word2[word2.length-1]){
+        
+        return true
+    }else{
+        
+    }
+        return false
 };
