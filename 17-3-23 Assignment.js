@@ -79,3 +79,16 @@ function arrIntoString(data){
   console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly") )
   console.log(addEnding(["new", "pander", "scoop"], "er"))
   console.log(addEnding(["bend", "sharpen", "mean"], "ing"))
+
+  //15
+
+  function spelling(text){
+    let result = []
+    let n = 0
+    for(c in text) 
+     result.push(text.slice(0,++n))
+    return result
+    }
+  console.log(spelling("bee"))
+  console.log(spelling("happy"))
+  console.log(spelling("eagerly"))
