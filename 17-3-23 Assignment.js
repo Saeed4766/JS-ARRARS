@@ -36,7 +36,30 @@ function arrIntoString(data){
   console.log(arrIntoString([1, 2, 3, 4, 5, 6]))
   console.log(arrIntoString([1, 2, 3, "a", "s", "dAAAA"]))
 
- //7
+ //5
+
+ function valueAt(value,index){
+  return value.at(index)
+}
+  console.log(valueAt([1, 2, 3, 4, 5, 6], 10 / 2))
+  console.log(valueAt([1, 2, 3, 4, 5, 6], 8.0 / 2))
+  console.log(valueAt([1, 2, 3, 4], 6.535355314 / 2))
+ 
+//6
+
+function search(value, num){
+  if(value.includes(num)){
+    return value.indexOf(num)
+  }else{
+    return -1
+  }
+}
+console.log(search([1, 5, 3], 5))
+console.log(search([9, 8, 3], 3))
+console.log(search([1, 2, 3], 4))
+
+
+  //7
  
  function check(arr,num){
   let result = arr.includes(num)
@@ -113,3 +136,5 @@ console.log(check([], 5))
   console.log(spelling("bee"))
   console.log(spelling("happy"))
   console.log(spelling("eagerly"))
+
+  
