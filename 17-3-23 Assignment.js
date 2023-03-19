@@ -36,7 +36,18 @@ function arrIntoString(data){
   console.log(arrIntoString([1, 2, 3, 4, 5, 6]))
   console.log(arrIntoString([1, 2, 3, "a", "s", "dAAAA"]))
 
-  //8
+ //7
+ 
+ function check(arr,num){
+  let result = arr.includes(num)
+  return result
+}
+console.log(check([1, 2, 3, 4, 5], 3))
+console.log(check([1, 1, 2, 1, 1], 3))
+console.log(check([5, 5, 5, 6], 5))
+console.log(check([], 5))
+
+ //8
   
   function invertArray(value){
     let result = value.map(value=>value*-1)
@@ -45,7 +56,7 @@ function arrIntoString(data){
   console.log(invertArray([1, 2, 3, 4, 5]))
   console.log(invertArray([1, -2, 3, -4, 5]))
   console.log(invertArray([])) 
-  
+
   //9
   function skipTooMuchSugarDrinks(data){
     let result = []
