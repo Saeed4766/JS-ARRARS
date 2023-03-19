@@ -67,3 +67,15 @@ function arrIntoString(data){
   console.log(stringPairs("mubashir")) 
   console.log(stringPairs("edabit"))
   console.log(stringPairs("airforces")) 
+
+  //14
+
+  function addEnding(arr,text){
+    arr.forEach(function(item,index){
+      arr[index] = item + text
+    })
+    return arr
+  }
+  console.log(addEnding(["clever", "meek", "hurried", "nice"], "ly") )
+  console.log(addEnding(["new", "pander", "scoop"], "er"))
+  console.log(addEnding(["bend", "sharpen", "mean"], "ing"))
