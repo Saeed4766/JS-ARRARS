@@ -7,6 +7,15 @@ function getFirstValue(element){
   console.log(getFirstValue([80, 5, 100]))
   console.log(getFirstValue([-500, 0, 50]))
    
+//2
+
+function makePair(a,b){
+  let result = [a,b]
+  return result
+}
+console.log(makePair(1, 2))
+console.log(makePair(51, 21)) 
+console.log(makePair(512124, 215))
 
 //3
 
@@ -41,3 +50,20 @@ function arrIntoString(data){
   
   console.log(skipTooMuchSugarDrinks(["fanta", "cola"])) 
   console.log(skipTooMuchSugarDrinks(["lemonade", "beer", "water"]))
+
+  //13
+
+  function stringPairs(data){
+    let result = []
+    
+    if(data.length % 2 !==0){
+      data = data + "*"
+    }
+    for (let i= 0; i < data.length; i +=2){
+      result.push(data.substring(i, i +2))
+    }
+    return result
+  }
+  console.log(stringPairs("mubashir")) 
+  console.log(stringPairs("edabit"))
+  console.log(stringPairs("airforces")) 
