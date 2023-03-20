@@ -95,6 +95,17 @@ console.log(check([], 5))
   console.log(skipTooMuchSugarDrinks(["fanta", "cola"])) 
   console.log(skipTooMuchSugarDrinks(["lemonade", "beer", "water"]))
 
+  //10
+
+  function filterArray(data){
+    let result = data.filter(data => typeof(data) === 'number')
+    return result
+  }
+  console.log(filterArray([1, 2, 3, "a", "b", 4]))
+  console.log(filterArray(["A", 0, "Edabit", 1729, "Python", "1729"]))
+  console.log(filterArray(["Nothing", "here"]))
+  
+
   //13
 
   function stringPairs(data){
