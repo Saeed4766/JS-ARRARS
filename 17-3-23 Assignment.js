@@ -104,6 +104,21 @@ console.log(check([], 5))
   console.log(filterArray([1, 2, 3, "a", "b", 4]))
   console.log(filterArray(["A", 0, "Edabit", 1729, "Python", "1729"]))
   console.log(filterArray(["Nothing", "here"]))
+
+  //11
+
+  function forbiddenLetter(letter,arr){
+    let res  = true
+  arr.forEach(function(char){
+  if(char.includes(letter)){
+   res = false
+  }
+  })
+    return res
+  }
+  console.log(forbiddenLetter("r", ["rock", "paper", "scissors"]))
+  console.log(forbiddenLetter("a", ["spoon", "fork", "knife"]))
+  console.log(forbiddenLetter("m", []))
   
 
   //13
